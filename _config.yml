@@ -40,7 +40,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Johannes G Brenner"
+      author: "Johannes Brenner"
       author-link: /about/
       kudos: true
       comments: true
@@ -50,7 +50,7 @@ defaults:
       type: "drafts"
     values:
       layout: "post"
-      author: "Johannes G Brenner"
+      author: "Johannes Brenner"
       author-link: /about/
       kudos: false
       comments: false
