@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-# Johannes G Brenner
+# Johannes Brenner
