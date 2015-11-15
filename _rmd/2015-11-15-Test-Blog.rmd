@@ -22,7 +22,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE}
+```{r, plot of car, echo=FALSE}
 plot(cars)
 ```
 
