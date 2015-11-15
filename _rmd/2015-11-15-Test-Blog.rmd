@@ -1,29 +1,15 @@
 ---
 layout: post
-date: 2015-11-15 20:00
-title: Blog Test
-subtitle: one month to go
+date: 2015-11-15 21:00
+title: How I get started.
+subtitle: a blog on WATER and rock, TRIVIALITIES
 category: test Rmd
-tags: [R, Jekyll, RStudio]
-summary: one week to COP21
-description: one week to COP21
+tags: [rock, water]
+summary: starting the blog, how I blog from RStudio with Rmarkdown on GitHub Jekyll
+description: TRIVIALITIES
 published: false
 status: process
-draft: false
+draft: true
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r, plot of car, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Today I start blogging elegant thanks to [Tobias Lohse](http://mrloh.se/about/) on the basis of [Jekyll](http://jekyllrb.com/), mostly about WATER - hydrology & rocks - MOUNTAIN LIFE. Less about TRIVIALITIES - trivialities that drive my daily life. 
