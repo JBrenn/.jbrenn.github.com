@@ -4,7 +4,7 @@ date: 2015-11-15 20:00
 title: Blog Test
 subtitle: one month to go
 category: test Rmd
-tags: [R Jekyll RStudio]
+tags: [R, Jekyll, RStudio]
 summary: one week to COP21
 description: one week to COP21
 published: false
