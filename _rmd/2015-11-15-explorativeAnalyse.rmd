@@ -1,0 +1,86 @@
+---
+title: "2 avoid common statistical problems"
+date: "2015-11-16 21:00"
+description: explortive data analysis
+output: pdf_document
+layout: post
+draft: yes
+published: no
+status: process
+subtitle: an explorative analysis of soil moisture data
+summary: explorative data analysis based on Zuur et al. (2010)
+tags: statistics
+category: R
+---
+
+###Introduction
+
+Alain Zuur, Ieno Elena and Chris Elphick published **A protocol for data exploration to avoid comon statistical problems** in 2010 (Methods in  Ecology and Evolution). They proposed 7 steps in order to prepare a data set towards the use of statistical methods in order to avoid type I or type II errors, thereby reducing the chance of making wrong ecological conclusions or recommendations.
+
+The recomended protocol includes the following questions:
+
+1. Are there outlier in x and y?
+2. Do we have homogeneity of variance?
+3. Are the data normally distributed?
+4. Are there a lot of zeros in the data?
+5. Is there collinarity among the covariates?
+6. What are the relationships between y and x variables?
+7. Should we consider interaction?
+8. Are observations of the response variable independent?
+
+In this document we will answer them by means of a visual data exploration.
+
+The data set we are working on is explain in detail within the [R-packages SoilMoisturePattern](). For more information install the package and read the data set documentation:
+
+``` {r, echo = FALSE, include = FALSE}
+
+library(SoilMoisturePattern)
+
+?HiResAlp_MobileCampaigns
+data("HiResAlp_MobileCampaigns")
+
+```
+
+###ARE THERE OUTLIER IN X AND Y?
+
+Outlier can be detected with boxplots or Cleveland dotplots (row number vs. observation). 
+
+``` {r, boxplot of HiResALp Muntatschinig campaigns, echo=FALSE, warning=FALSE}
+
+library(ggplot2)
+
+data <- HiResAlp_MobileCampaigns[HiResAlp_MobileCampaigns$CampaignType=="RADAR_MUNTATSCHINIG",]
+
+p_boxes <- 
+  ggplot(data = data, aes(y=SoilMoisture_mean_Processed, x=date, group=date)) + 
+  geom_hline(aes(linetype="twodash"), yintercept=quantile(data$SoilMoisture_mean_Processed, 
+                                                          probs = c(.25,0.5,0.75), na.rm=T), 
+             col=c("grey30","grey10","grey30")) + 
+  geom_jitter(col="grey") + 
+  geom_boxplot(width=0.2, position=position_dodge(width=0.2)) + 
+  geom_boxplot(aes(y=precedingRain3_P2), width=0.5, position=position_dodge(width=0.2), col="darkblue") +
+  geom_text(aes(x=2,y=65,label="__  preceding Rain (3 days) in P2 [mm]"), col="darkblue", cex=2.5) +
+  ylab("smc [vol%]") + 
+  xlab("")
+
+p_boxes
+
+```
+
+```{r, Cleveland dotplot of HiResAlp Muntatschinig campaigns, echo=F}
+
+data <- HiResAlp_MobileCampaigns[HiResAlp_MobileCampaigns$CampaignType=="RADAR_MUNTATSCHINIG",]
+
+data <- data[order(data$SoilMoisture_mean_Processed),]
+data$rownr <- 1:dim(data)[1]
+
+p_cleveland <-
+  ggplot(data = data, aes(x=SoilMoisture_mean_Processed, y=rownr)) +
+  geom_point()
+
+p_cleveland
+
+```
+
+
+Zuur Alain F., Ieno Elena N., Elphick Chris E. (2010): A protocol for data exploration to avoid common statical problems, [Methods in Ecology and Evolution, 1, 3-14](DOI).
