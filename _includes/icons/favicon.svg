@@ -14,7 +14,7 @@
    inkscape:version="0.48.4 r9939"
    width="100%"
    height="100%"
-   sodipodi:docname="favicon_1.svg">
+   sodipodi:docname="favicon.svg">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,28 +55,27 @@
   </sodipodi:namedview>
   <g
      id="g3089"
-     transform="matrix(1.0679222,0,0,1.0679222,-9.1153552,-6.1583235)">
+     transform="matrix(1.0679222,0,0,1.0679222,-9.1153552,-6.1583235)" />
+  <g
+     id="g2989">
     <path
-       transform="matrix(1.0911419,0,0,1.1034493,-19.97992,-22.32624)"
-       d="m 194.91526,109.32204 c 0,44.93164 -36.99342,81.35593 -82.62712,81.35593 -45.633699,0 -82.627122,-36.42429 -82.627122,-81.35593 0,-44.931645 36.993423,-81.355937 82.627122,-81.355937 45.6337,0 82.62712,36.424292 82.62712,81.355937 z"
-       sodipodi:ry="81.355934"
-       sodipodi:rx="82.627121"
-       sodipodi:cy="109.32204"
-       sodipodi:cx="112.28814"
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.20000005000000010;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="path3009"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.20000005;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       sodipodi:type="arc" />
+       sodipodi:cx="112.28814"
+       sodipodi:cy="109.32204"
+       sodipodi:rx="82.627121"
+       sodipodi:ry="81.355934"
+       d="m 194.91526,109.32204 c 0,44.93164 -36.99342,81.35593 -82.62712,81.35593 -45.633699,0 -82.627122,-36.42429 -82.627122,-81.35593 0,-44.931645 36.993423,-81.355937 82.627122,-81.355937 45.6337,0 82.62712,36.424292 82.62712,81.355937 z"
+       transform="matrix(1.1652547,0,0,1.178398,-30.452355,-30.001011)" />
+    <g
+       transform="matrix(6.920577,0,0,5.9554187,-314.73508,-433.39314)"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+       id="flowRoot2994">
+      <path
+         d="m 74.885,85.651598 -1.2,0 c -0.240021,-2.239976 -0.733354,-3.666642 -1.48,-4.28 -0.720019,-0.639974 -2.226685,-0.959973 -4.52,-0.96 l -2.36,0 0,22.560002 c -1.3e-5,0.82667 0.06665,1.36 0.2,1.6 0.13332,0.29333 0.493319,0.52 1.08,0.68 0.613318,0.16 1.186651,0.24 1.72,0.24 0.559983,0 1.026649,0.0133 1.4,0.04 l 0,1.16 -11.56,0 0,-1.16 c 0.373327,-0.0267 0.82666,-0.04 1.36,-0.04 0.559992,0 1.133325,-0.08 1.72,-0.24 0.613324,-0.16 0.986657,-0.38667 1.12,-0.68 0.133323,-0.24 0.19999,-0.77333 0.2,-1.6 l 0,-22.560002 -2.36,0 c -2.293339,2.7e-5 -3.813338,0.320026 -4.56,0.96 -0.720003,0.613358 -1.200002,2.040024 -1.44,4.28 l -1.2,0 0,-6.64 21.88,0 0,6.64"
+         style=""
+         id="path2997" />
+    </g>
   </g>
-  <flowRoot
-     xml:space="preserve"
-     id="flowRoot2994"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
-     transform="matrix(6.920577,0,0,5.9554187,-314.73508,-433.39314)"><flowRegion
-       id="flowRegion2996"><rect
-         id="rect2998"
-         width="98.305084"
-         height="83.898308"
-         x="52.118645"
-         y="66.94915"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:UnBatang;-inkscape-font-specification:UnBatang" /></flowRegion><flowPara
-       id="flowPara3000">T</flowPara></flowRoot></svg>
+</svg>
